@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zeal College - Excellence</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+/* Navbar */
+nav{
+    background:#0b3d91;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+}
+
+nav h2{
+    font-size:22px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+/* Hero Section */
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1523240795612-9a054b0db644');
+    background-size:cover;
+    background-position:center;
+    height:60vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+/* Excellence Section */
+.excellence{
+    padding:60px 10%;
+    text-align:center;
+}
+
+.excellence h2{
+    color:#0b3d91;
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:280px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#0b3d91;
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:14px;
+    color:#555;
+}
+
+/* Footer */
+footer{
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h2>Zeal College</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Excellence</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div>
+        <h1>Excellence in Education</h1>
+        <p>Empowering Students for a Better Tomorrow</p>
+    </div>
+</section>
+
+<!-- Excellence Section -->
+<section class="excellence">
+    <h2>Our Excellence</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Academic Excellence</h3>
+            <p>Providing high quality education with experienced faculty and modern laboratories.</p>
+        </div>
+
+        <div class="card">
+            <h3>Placement Success</h3>
+            <p>Strong industry connections with excellent placement records in top companies.</p>
+        </div>
+
+        <div class="card">
+            <h3>Research & Innovation</h3>
+            <p>Encouraging innovation, research projects, and technical development programs.</p>
+        </div>
+
+        <div class="card">
+            <h3>Campus Facilities</h3>
+            <p>Smart classrooms, library, sports complex, and modern infrastructure.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    © 2026 Zeal College of Engineering & Research | All Rights Reserved
+</footer>
+
+</body>
+</html>

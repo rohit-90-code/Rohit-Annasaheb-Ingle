@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZCOER - Zeal College of Engineering & Research</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Top Info Bar */
+.top-bar{
+    background:#1f5c8a;
+    color:#fff;
+    padding:8px 15px;
+    font-size:14px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.top-bar a{
+    color:#fff;
+    text-decoration:none;
+    margin-right:10px;
+}
+
+/* Main Logo Section */
+.logo-section{
+    text-align:center;
+    padding:30px 15px;
+    background:#ffffff;
+}
+
+.logo-section img{
+    width:120px;
+    margin-bottom:10px;
+}
+
+.logo-section h2{
+    font-size:20px;
+    margin-bottom:5px;
+}
+
+.logo-section h1{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.logo-section p{
+    font-size:13px;
+    color:#444;
+}
+
+/* NAAC Badge */
+.naac{
+    margin-top:20px;
+}
+
+.naac img{
+    width:140px;
+}
+
+/* Blue Menu Bar */
+.menu-bar{
+    background:#1f5c8a;
+    padding:15px;
+    text-align:right;
+}
+
+.menu-btn{
+    background:#ffffff;
+    padding:8px 12px;
+    border-radius:4px;
+    display:inline-block;
+}
+
+/* Slider Section */
+.slider img{
+    width: 1400px;;
+    height: 600px;;
+    display:block;
+    text-align: center;
+}
+
+/* Info Grid */
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+}
+
+.box{
+    padding:40px 20px;
+    color:#fff;
+    text-align:center;
+}
+
+.box h3{
+    margin-top:10px;
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.box button{
+    padding:8px 18px;
+    border:none;
+    border-radius:20px;
+    background:#fff;
+    color:#333;
+    cursor:pointer;
+}
+
+/* Box Colors */
+.purple{ background:#8e44ad; }
+.blue{ background:#3b5998; }
+.teal{ background:#1abc9c; }
+.yellow{ background:#f4b400; }
+
+/* Responsive */
+@media(max-width:768px){
+    .logo-section h1{
+        font-size:18px;
+    }
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* SECTION COMMON */
+.section{
+    padding:60px 8%;
+}
+
+/* HEADING STYLE */
+.small-title{
+    color:#0b3d91;
+    font-weight:bold;
+    font-size:14px;
+    letter-spacing:1px;
+    margin-bottom:10px;
+}
+
+.main-title{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+/* ================= WHO WE ARE ================= */
+.who-container{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.who-left{
+    flex:2;
+}
+
+.who-left p{
+    line-height:1.7;
+    margin-bottom:20px;
+    color:#555;
+}
+
+.phone{
+    font-weight:bold;
+    color:#0b3d91;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    background:#0b3d91;
+    color:white;
+    padding:12px 30px;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.who-right{
+    flex:1;
+    background:white;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.who-right h3{
+    color:#0b3d91;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.who-right ul{
+    list-style:none;
+}
+
+.who-right ul li{
+    margin-bottom:12px;
+    font-size:14px;
+}
+
+/* ================= COURSES ================= */
+.course-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.outline-btn{
+    padding:10px 25px;
+    border:2px solid #0b3d91;
+    border-radius:25px;
+    text-decoration:none;
+    color:#0b3d91;
+    font-weight:bold;
+}
+
+.course-text{
+    margin-top:20px;
+    max-width:600px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* COURSE CARD */
+.course-card{
+    margin-top:40px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.course-card img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+.course-info{
+    padding:20px;
+    text-align:center;
+}
+
+.course-info h3{
+    margin-bottom:10px;
+}
+
+/* ================= ACCREDITATION ================= */
+.accreditation{
+    text-align:center;
+}
+
+.logo-grid{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.logo-grid img{
+    width:150px;
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .who-container{
+        flex-direction:column;
+    }
+
+    .course-card img{
+        height:250px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+    <div>DTE Code: EN-6298</div>
+    <div>
+        📞 9028750620 |
+        ✉ zcoer@zealeducation.com
+    </div>
+</div>
+
+<!-- Logo Section -->
+<div class="logo-section">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.RyEMX6hd3zok62YnnSaI9wAAAA?pid=Api&P=0&h=180" alt="ZCOER Logo">
+    <h2>Zeal Education Society's</h2>
+    <h1>ZEAL COLLEGE OF ENGINEERING & RESEARCH, PUNE</h1>
+    <p>An Autonomous Institute affiliated to Savitribai Phule Pune University</p>
+    <p>ISO:21001:2018 (EOMS) Certified Institute | Accredited with 'A+' Grade by NAAC</p>
+
+    <div class="naac">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.GqlPlNk_UcNyOhKSe4ngmQAAAA?pid=Api&P=0&h=180" alt="NAAC A+">
+    </div>
+</div>
+
+<!-- Menu Bar -->
+<div class="menu-bar">
+    <div class="menu-btn">☰</div>
+</div>
+
+<!-- Slider Section -->
+<div class="slider"style="text-align: center;">
+    <img src="https://zcoer.in/wp-content/uploads/2025/03/DSC_0052-scaled-1.jpg" alt="" height="200" width="300">
+</div>
+
+<!-- Info Grid -->
+<div class="info-grid">
+    <div class="box purple">
+        🎓
+        <h3>ORBITX CLUB</h3>
+        <a href="hello5.html"><button>MORE INFO</a></button>
+    </div>
+
+    <div class="box blue">
+        🏛
+        <h3>CAMPUS LIFE</h3>
+        <a href="hello3.html"><button>MORE INFO</a></button>
+    </div>
+
+    <div class="box teal">
+        💼
+        <h3>PLACEMENT</h3>
+        <a href="hello4.html"><button>MORE INFO</a></button>
+    </div>
+
+    <div class="box yellow">
+        🎯
+        <h3>EXCELLENCE</h3>
+        <a href="hello7.html"><button>MORE INFO</a></button>
+    </div>
+</div>
+<section class="section" style="background:#eef2f7;">
+    
+    <div class="course-header">
+        <div><section class="section">
+    <div class="who-container">
+        
+        <div class="who-left">
+            <div class="small-title">WELCOME TO ZEAL COLLEGE OF ENGINEERING & RESEARCH</div>
+            <div class="main-title">Who We Are</div>
+
+            <p>
+                ZEAL College of Engineering & Research is a top engineering college in Pune 
+                offering quality education, expert faculty and excellent placements. 
+                Established in 1996, the institute focuses on academic excellence and 
+                overall development of students.
+            </p>
+
+            <div class="phone">CALL US 020-67206000</div>
+
+            <a href="#" class="btn">VIEW MORE</a>
+        </div>
+
+        <div class="who-right">
+            <h3>Latest Happening</h3>
+            <ul>
+                <li>• NBA Accreditation Visit</li>
+                <li>• ZEAL Auto Expo 2K25</li>
+                <li>• Ph.D Admission 2024-25</li>
+                <li>• Personal Interviews Schedule</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+            <div class="small-title">GRAB ONE OF</div>
+            <div class="main-title">Our Courses</div>
+        </div>
+
+        <a href="#" class="outline-btn">VIEW ALL COURSES</a>
+    </div>
+
+    <p class="course-text">
+        Our pedagogy focuses on maximizing learning outcomes by balancing 
+        continuous evaluation and final examinations, ensuring both modern 
+        and traditional approaches are combined effectively.
+    </p>
+
+    <div class="course-card">
+        <img src="https://zcoer.in/wp-content/uploads/2021/01/elect.jpg" alt="Electrical Engineering">
+        <div class="course-info">
+            <h3>Electrical Engineering</h3>
+            <p>The Electrical Engineering Department has been at the forefront of innovation and excellence.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- ================= ACCREDITATION ================= -->
+<section class="section accreditation">
+
+    <div class="main-title">Accreditation</div>
+
+    <div class="logo-grid">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.dlhdalovEA35Fr-6JxqpHAAAAA?pid=Api&P=0&h=180">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.GqlPlNk_UcNyOhKSe4ngmQAAAA?pid=Api&P=0&h=180">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.RyEMX6hd3zok62YnnSaI9wAAAA?pid=Api&P=0&h=180">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.4GxI9DBNem4fUFrw3asEXQHaHt?pid=Api&P=0&h=180">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.8umyr3S4M_Qi0xspZ7LXTwHaHa?pid=Api&P=0&h=180">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.m7wiGvWZA5oj_YygsuiRWgHaFH?pid=Api&P=0&h=180">
+    </div>
+
+</section>
+
+
+</body>
+</html>
